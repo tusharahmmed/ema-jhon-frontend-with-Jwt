@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
+import Order from './components/Order/Order';
 import OrderReview from './components/OrderReview/OrderReview';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
@@ -36,6 +37,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/placeorder">
               <PlaceOrder></PlaceOrder>
+            </PrivateRoute>
+            <PrivateRoute path="/orders">
+              <Order></Order>
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>
